@@ -1,11 +1,9 @@
 .DS_Store
-.vscode
 target/
 .idea
 .project
 .settings
 .classpath
-.vscode
 .java-version
 *.iml
 build/
