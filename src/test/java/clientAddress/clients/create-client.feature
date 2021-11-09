@@ -7,8 +7,3 @@ Feature: Create Client
     When method POST
     Then status 200
     And assert response.message == fakeUser.name + " successfully added"
-
- 
-  Scenario: test fake user generator 
-    * print fakeUser
-

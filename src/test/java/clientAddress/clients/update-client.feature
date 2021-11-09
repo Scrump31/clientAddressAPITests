@@ -5,6 +5,7 @@ Feature: Update Client
     * def clientList = getClients.response.clients
     * def getLastClient = clientList[clientList.length - 1]
     * def newEmail = fakeUser.email
+
   Scenario: A user can update client data
     Given url baseUrl
     And path 'update-client'

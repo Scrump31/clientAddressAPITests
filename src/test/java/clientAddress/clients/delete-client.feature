@@ -6,6 +6,7 @@ Feature: Delete Client
     * def getLastClient = clientList[clientList.length - 1]
     * def userId = getLastClient.id
     * def userName = getLastClient.name
+
   Scenario: A user can delete a client
     Given url baseUrl
     And path 'delete-client'
