@@ -7,7 +7,7 @@ Feature: Get Client
 
   Scenario: A user can get a single client
     Given url baseUrl
-    And path 'edit-client'
+    And path 'get-client'
     And param id = getLastClient.id
     When method GET
     Then status 200
