@@ -14,7 +14,6 @@ Feature: Update Client
     When method POST
     Then status 201
     And response.message == getLastClient.name + " successfully updated"
-    And path 'edit-client'
-    And param id = getLastClient.id
-    When method GET
+    * def id = getLastClient.id
+    And call read('get-client.feature') {id: #(id)}
     Then response.email == newEmail
